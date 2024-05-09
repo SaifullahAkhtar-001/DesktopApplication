@@ -31,12 +31,11 @@
             System.ComponentModel.ComponentResourceManager resources = new System.ComponentModel.ComponentResourceManager(typeof(Form1));
             this.toolStrip1 = new System.Windows.Forms.ToolStrip();
             this.tsBread = new System.Windows.Forms.ToolStripButton();
+            this.tsListofProducts = new System.Windows.Forms.ToolStripButton();
             this.tsStockin = new System.Windows.Forms.ToolStripButton();
             this.tsStockout = new System.Windows.Forms.ToolStripButton();
             this.tsUser = new System.Windows.Forms.ToolStripButton();
-            this.tsReport = new System.Windows.Forms.ToolStripButton();
             this.tsLogin = new System.Windows.Forms.ToolStripButton();
-            this.tsListofProducts = new System.Windows.Forms.ToolStripButton();
             this.toolStrip1.SuspendLayout();
             this.SuspendLayout();
             // 
@@ -49,7 +48,6 @@
             this.tsStockin,
             this.tsStockout,
             this.tsUser,
-            this.tsReport,
             this.tsLogin});
             this.toolStrip1.Location = new System.Drawing.Point(0, 0);
             this.toolStrip1.Name = "toolStrip1";
@@ -66,6 +64,16 @@
             this.tsBread.Text = "Product";
             this.tsBread.TextImageRelation = System.Windows.Forms.TextImageRelation.ImageAboveText;
             this.tsBread.Click += new System.EventHandler(this.tsBread_Click);
+            // 
+            // tsListofProducts
+            // 
+            this.tsListofProducts.Image = ((System.Drawing.Image)(resources.GetObject("tsListofProducts.Image")));
+            this.tsListofProducts.ImageTransparentColor = System.Drawing.Color.Magenta;
+            this.tsListofProducts.Name = "tsListofProducts";
+            this.tsListofProducts.Size = new System.Drawing.Size(94, 109);
+            this.tsListofProducts.Text = "List of Products";
+            this.tsListofProducts.TextImageRelation = System.Windows.Forms.TextImageRelation.ImageAboveText;
+            this.tsListofProducts.Click += new System.EventHandler(this.tsListofProducts_Click);
             // 
             // tsStockin
             // 
@@ -97,16 +105,6 @@
             this.tsUser.TextImageRelation = System.Windows.Forms.TextImageRelation.ImageAboveText;
             this.tsUser.Click += new System.EventHandler(this.tsUser_Click);
             // 
-            // tsReport
-            // 
-            this.tsReport.Image = ((System.Drawing.Image)(resources.GetObject("tsReport.Image")));
-            this.tsReport.ImageTransparentColor = System.Drawing.Color.Magenta;
-            this.tsReport.Name = "tsReport";
-            this.tsReport.Size = new System.Drawing.Size(104, 109);
-            this.tsReport.Text = "Inventory Reports";
-            this.tsReport.TextImageRelation = System.Windows.Forms.TextImageRelation.ImageAboveText;
-            this.tsReport.Click += new System.EventHandler(this.tsReport_Click);
-            // 
             // tsLogin
             // 
             this.tsLogin.Image = global::BakeryInventorySystem.Properties.Resources.login;
@@ -116,16 +114,6 @@
             this.tsLogin.Text = "Login";
             this.tsLogin.TextImageRelation = System.Windows.Forms.TextImageRelation.ImageAboveText;
             this.tsLogin.Click += new System.EventHandler(this.tsLogin_Click);
-            // 
-            // tsListofProducts
-            // 
-            this.tsListofProducts.Image = ((System.Drawing.Image)(resources.GetObject("tsListofProducts.Image")));
-            this.tsListofProducts.ImageTransparentColor = System.Drawing.Color.Magenta;
-            this.tsListofProducts.Name = "tsListofProducts";
-            this.tsListofProducts.Size = new System.Drawing.Size(94, 109);
-            this.tsListofProducts.Text = "List of Products";
-            this.tsListofProducts.TextImageRelation = System.Windows.Forms.TextImageRelation.ImageAboveText;
-            this.tsListofProducts.Click += new System.EventHandler(this.tsListofProducts_Click);
             // 
             // Form1
             // 
@@ -152,7 +140,6 @@
         private System.Windows.Forms.ToolStripButton tsStockin;
         private System.Windows.Forms.ToolStripButton tsStockout;
         private System.Windows.Forms.ToolStripButton tsUser;
-        private System.Windows.Forms.ToolStripButton tsReport;
         private System.Windows.Forms.ToolStripButton tsLogin;
         private System.Windows.Forms.ToolStripButton tsListofProducts;
     }
