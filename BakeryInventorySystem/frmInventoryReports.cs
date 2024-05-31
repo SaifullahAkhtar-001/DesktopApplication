@@ -279,5 +279,10 @@ namespace BakeryInventorySystem
 
 
         }
+
+        private void txtSearch_TextChanged(object sender, EventArgs e)
+        {
+
+        }
     }
 }
